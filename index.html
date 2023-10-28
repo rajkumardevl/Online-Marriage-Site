@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- fa fa-Icon  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- fas fa-Icon  -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!-- Material Icon  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Font  -->
+    <link href='https://fonts.googleapis.com/css?family=Alata' rel='stylesheet'>
+
+    <title>Glance Events Luxury Wedding Planners and Party Producers</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Alata;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .top {
+            height: 22vh;
+            width: 100%;
+            background-color: #fd1a56;
+            padding: 22px 5.1em 0px 5.1em;
+        }
+
+        .fa-phone {
+            transform: rotateY(180deg);
+        }
+
+        .email {
+            margin-left: 12em;
+        }
+
+        .fa-comment,
+        .fa-book,
+        .fa-user {
+            margin-left: 20px;
+        }
+
+        .black {
+            height: 14vh;
+            width: 100%;
+            background-color: rgb(49, 49, 49);
+            margin-top: 12px;
+        }
+
+        .logo {
+            height: 2em;
+            width: auto;
+        }
+
+        .all_slide,
+        .col-md-6 {
+            padding-right: calc(var(--bs-gutter-x) * .0);
+            padding-left: calc(var(--bs-gutter-x) * .0);
+        }
+
+        .carousel-item img {
+            height: 100vh;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .card {
+            filter: drop-shadow(0 0 2px black);
+        }
+
+        .card_in {
+            height: 48.5vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .four {
+            padding: 10px 2px;
+        }
+
+        .card_in img {
+            height: 50px;
+            width: 50px;
+            margin-top: 50px;
+        }
+
+        .card_one {
+            height: 100vh;
+            width: 100%;
+            margin-top: 10px;
+            background-color: #14001b;
+        }
+
+        .card_one p {
+            font-size: 18px;
+        }
+
+        .bi-check2-square {
+            color: #fd1a56;
+            font-size: 17px;
+            text-shadow: 0 0 1px #fd1a56;
+            line-height: 40px;
+        }
+
+        .card_one a {
+            background-color: transparent;
+            border: 1px solid white;
+            padding: 10px;
+            color: white;
+            transition: .5s;
+            width: 40%;
+        }
+
+        .card_one a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .card_one span {
+            margin-left: 10px;
+        }
+
+        .last_back {
+            height: auto;
+            width: 100%;
+            background-color: white;
+        }
+
+        .last_back p {
+            color: #fd1a56;
+        }
+
+        .last_back h1 {
+            font-size: 3.5em;
+        }
+
+        .images {
+            height: 50vh;
+            width: 100%;
+            position: relative;
+        }
+
+        .image {
+            height: 50vh;
+            width: 100%;
+            display: block;
+            margin-top: 10px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #fd1a56;
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .3s ease;
+            opacity: .7;
+        }
+
+        .images:hover .overlay {
+            width: 100%;
+        }
+
+        .images a {
+            padding: 10px;
+            border-radius: 100%;
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            transition: .5s;
+        }
+
+        .images a:hover {
+            background-color: white;
+            color: #fd1a56;
+        }
+
+        .enjoy {
+            height: auto;
+            width: 100%;
+            background-color: rgb(1, 1, 17);
+        }
+
+        .enjoy img {
+            height: 6.5em;
+            width: auto;
+        }
+
+        .cele {
+            color: #fd1a56;
+        }
+
+        .enjoy h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+        }
+
+        .book_event {
+            color: white;
+            border: 2px solid white;
+            padding: 15px 20px;
+        }
+
+        .book_event:hover {
+            color: black;
+            background-color: white;
+        }
+
+        .footer {
+            height: 80vh auto;
+            width: 100a;
+            background-color: #14001b;
+        }
+
+        .foot_in {
+            margin: 50px 0px 0px 5em;
+        }
+
+        .foot_in i {
+            margin-right: 10px;
+            color: #fd1a56;
+        }
+
+        .foot_in span {
+            font-size: 17px;
+        }
+
+        .foot_in a {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 30px;
+            transition: .3s;
+        }
+
+        .foot_in a:hover {
+            color: #fd1a56;
+        }
+
+        .last img {
+            height: 100px;
+            width: auto;
+        }
+
+        .icons a {
+            background-color: #472a52;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            padding: 10px 0px 0px 0px;
+            transition: .5s;
+            margin-left: 10px;
+        }
+
+        .icons a:hover {
+            background-color: #fd1a56;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="top">
+                <span class=" text-light">
+                    <i class="fa fa-map-marker-alt"></i>
+                    Reg. Office: C1/45,Ashok Vihar, Delhi-110052
+                    &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                    <i class="fa fa-phone"></i>
+                    +91-8447722001
+                    <a class="email text-light" href="#">
+                        <i class="fa fa-envelope"></i>
+                        Email : richabajaj@glanceevents.in
+                    </a> &nbsp;&nbsp;&nbsp; | &nbsp;
+                    <a href="#" class="fa fa-home text-light"></a>
+                    <a href="#" class="fa fa-comment text-light"></a>
+                    <a href="#" class="fa fa-user text-light"></a>
+                </span>
+                <div class="black">
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="all_slide">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/slider-1.jpg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slider-2.jpg" class="d-block" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/slider-3.jpg" class="d-block" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5  ">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6 four">
+                            <div class="card_in card">
+                                <img src="images/newlyweds.png" alt="">
+                                <h4 class="mt-4">
+                                    Wedding
+                                </h4>
+                                <span class=" text-center  text-secondary">
+                                    A wedding and Birthday planner is a who assists with the design, planning and
+                                    management
+                                    of a client's. wedding.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 four">
+                            <div class="card_in card">
+                                <img src="images/party.png" alt="">
+                                <h4 class="mt-4">
+                                    Private Party
+                                </h4>
+                                <span class=" text-center  text-secondary">
+                                    We provides a perfect platform to the client, with innovative ideas and concepts. In
+                                    order to set a bench mark with every event, we lay great emphasis, even on minutest
+                                    details.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 four">
+                            <div class="card_in card">
+                                <img src="images/camera.png" alt="">
+                                <h4 class="mt-4">
+                                    Photography
+                                </h4>
+                                <span class=" text-center  text-secondary">
+                                    We understand the value of your event photography and have experience discretely
+                                    covering intimate private events but can also scale up to shoot multi-city launch
+                                    parties.
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 four">
+                            <div class="card_in card">
+                                <img src="images/hand-in-hand.png" alt="">
+                                <h4 class="mt-4">
+                                    Corporate Party
+                                </h4>
+                                <span class=" text-center  text-secondary">
+                                    Corporate Party Places in Delhi NCR. Book a venue for your office party through us
+                                    and
+                                    get the best budget-friendly food and drinks packages for your business event.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card card_one p-3">
+                        <h1 class=" text-light">
+                            Glance The Best Event Planner
+                        </h1>
+                        <p class=" text-light">
+                            With our passion, knowledge, creative flair and inspiration, we are dedicated in helping you
+                            to achieve.
+                        </p>
+                        <i class="bi-check2-square">
+                            <span class=" text-light">
+                                Entertainment
+                            </span>
+                        </i>
+                        <i class="bi-check2-square">
+                            <span class=" text-light">
+                                Destination Wedding
+
+                            </span>
+                        </i>
+                        <i class="bi-check2-square">
+                            <span class=" text-light">
+                                International weddings
+
+                            </span>
+                        </i>
+
+                        <i class="bi-check2-square">
+                            <span class=" text-light">
+                                Venue selection
+
+                            </span>
+                        </i>
+
+                        <i class="bi-check2-square">
+                            <span class=" text-light">
+                                Decor
+                            </span>
+                        </i>
+
+                        <i class="bi-check2-square">
+                            <span class=" text-light">
+                                Makeup
+                            </span>
+                        </i>
+
+                        <i class="bi-check2-square">
+                            <span class=" text-light">
+                                Catering
+                            </span>
+                        </i>
+
+                        <i class="bi-check2-square">
+                            <span class=" text-light">
+                                Photography
+                            </span>
+                        </i><br>
+                        <a href="#" class="view_more text-center rounded">Veiw More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="last_back">
+                    <p class=" text-center mt-5">
+                        SEE OUR BEST
+                    </p>
+                    <h1 class=" text-center">
+                        Check Out Photo Gallery
+                    </h1>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="images ">
+                                    <img class="image" src="images/gallery-1.jpg" alt="Wedding Image">
+                                    <div class="overlay">
+                                        <a href="#" class="fa fa-search"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="images">
+                                    <img class="image" src="images/gallery-2.jpg" alt="Wedding Image">
+                                    <div class="overlay">
+                                        <a href="#" class="fa fa-search"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="images">
+                                    <img class="image" src="images/gallery-3.jpg" alt="Wedding Image">
+                                    <div class="overlay">
+                                        <a href="#" class="fa fa-search"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="images">
+                                    <img class="image" src="images/gallery-4.jpg" alt="Wedding Image">
+                                    <div class="overlay">
+                                        <a href="#" class="fa fa-search"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="images">
+                                    <img class="image" src="images/gallery-5.jpg" alt="Wedding Image">
+                                    <div class="overlay">
+                                        <a href="#" class="fa fa-search"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="images">
+                                    <img class="image" src="images/gallery-6.jpg" alt="Wedding Image">
+                                    <div class="overlay">
+                                        <a href="#" class="fa fa-search"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a class=" float-end mt-3 mb-5 btn btn-primary" href="#">Veiw All</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="enjoy text-center">
+                    <a href="#" class="">
+                        <img class="mt-4" src="images/cele.png" alt="">
+                    </a>
+                    <h3 class=" text-light">
+                        We Take Care Of Preparation,
+                    </h3>
+                    <h1 class=" text-light">
+                        You Enjoy The
+                        <span class="cele">
+                            Celebration!
+                        </span>
+                    </h1>
+                    <a href="#" class="book_event"> Book Event</a><br><br><br>
+                </div>
+            </div>
+            <div class="row footer text-light">
+                <div class="col-md-4">
+                    <div class="foot_in">
+                        <h4>
+                            Contact Us
+                        </h4>
+                        <i class="fa fa-map-marker-alt"></i>
+                        <span>
+                            Reg. Office: C1/45,Ashok Vihar,
+                            Delhi-110052
+                        </span>
+                        <hr>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            richabajaj@glanceevents.in
+                        </span>
+                        <hr>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            +91-8447722001
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="foot_in">
+                        <h4>
+                            Our Service
+                        </h4>
+                        <a href="#">Home</a><br>
+                        <a href="#">About Us</a><br>
+                        <a href="#">Services</a><br>
+                        <a href="#">Gallery</a><br>
+                        <a href="#">Reach Us</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="foot_in">
+                        <h4>
+                            Service
+                        </h4>
+                        <a href="#">Destination Wedding</a><br>
+                        <a href="#">International wedding</a><br>
+                        <a href="#">Venue selection</a><br>
+                        <a href="#">Entertainment</a><br>
+                        <a href="#">Photography</a><br>
+                        <a href="#">Makeup</a><br>
+                        <a href="#">Catering</a><br>
+                        <a href="#">Decore</a>
+                    </div>
+                </div>
+                <div class="col-md-9 mt-2">
+
+                    <div class="foot_in last">
+                        <img src="images/logo2.png" alt="">
+                        <p class="text-center">
+                            Copyright © 2022 Glance Events , All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="icons">
+
+                        <a href="#" class=" fa fa-facebook"></a>
+                        <a href="#" class=" fa fa-instagram"></a>
+                        <a href="#" class=" fa fa-linkedin"></a>
+                    </div>
+                    <p class=" mt-4">
+                        Develop & Design By :- Raj Developer
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
